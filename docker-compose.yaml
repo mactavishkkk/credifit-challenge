@@ -1,0 +1,14 @@
+networks:
+  dev:
+    driver: bridge
+
+services:
+  credifit-app:
+    container_name: credifit-app
+    ports:
+      - "3002:3000"
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - dev
