@@ -15,7 +15,12 @@
     display: flex;
     gap: 40px;
     margin-left: -50%;
+}
 
+@media screen and (max-width: 1440px) {
+    .nav-links {
+        margin-left: -30%;
+    }
 }
 
 .nav-links a {
