@@ -1,0 +1,66 @@
+.company-card {
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.company-card-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+
+    padding: 20px;
+    border-radius: 10px;
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.company-card-header:hover {
+    background-color: #e7e7e7;
+}
+
+.company-card-body {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.company-card-divider {
+    height: 1px;
+    background-color: #BBC3C4;
+    margin: 0 10px;
+}
+
+.toggle-icon {
+    font-size: 1.2em;
+}
+
+.company-card-row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.company-card-label {
+    margin-bottom: 5px;
+}
+
+.company-card-value {
+    margin-bottom: 5px;
+    color: #535F5F;
+}
+
+@media (min-width: 600px) {
+    .company-card-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .company-card-row {
+        flex-direction: column;
+    }
+}
