@@ -1,0 +1,20 @@
+.assistant-message-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #FFE5D5;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.assistant-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.assistant-message {
+    flex: 1;
+}

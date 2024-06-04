@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from '../../api/axios';
-import './index.css'
 import PayrollCard from '../../components/PayrollCard/PayrollCard';
+import { useNavigate } from 'react-router-dom';
+import './index.css';
 
 const PayrollLoan = () => {
     const [payrolls, setPayrolls] = useState([]);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchPayrolls = async () => {
@@ -18,13 +21,23 @@ const PayrollLoan = () => {
         fetchPayrolls();
     }, []);
 
+    const handleNewLoan = () => {
+        navigate('/emprestimo/criar');
+    };
+
     return (
         <div>
-            <h2 className='title'>Empréstimos</h2>
+            <div className='bread-crumbs-container'>
+                <p className='bread-crumbs'>Home / Crédito Consignado</p>
+                <p className='title'>Crédito Consignado</p>
+            </div>
             <div className='container'>
                 {payrolls.map(payroll => (
                     <PayrollCard key={payroll.id} payroll={payroll} />
                 ))}
+            </div>
+            <div className='button-container'>
+                <button className='new-loan-button' onClick={handleNewLoan}>Novo empréstimo</button>
             </div>
         </div>
     );

@@ -1,0 +1,55 @@
+.container {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-card {
+    color: #057D88;
+}
+
+.card {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.installments-options button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.installments-options button.selected {
+    background-color: #057D88;
+    color: white;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #057D88;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #045A5E;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
