@@ -20,9 +20,9 @@ const Company = () => {
 
     return (
         <div>
-            <div className='bread-crumbs-container'>
-                <p className='bread-crumbs'>Home / Empresas</p>
-                <p className='title'>Empresas</p>
+            <div className='bread-crumbs-container-company'>
+                <p className='bread-crumbs-company'>Home / Empresas</p>
+                <p className='title-company'>Empresas</p>
             </div>
             <div className='container'>
                 {companies.map(company => (

@@ -27,9 +27,9 @@ const PayrollLoan = () => {
 
     return (
         <div>
-            <div className='bread-crumbs-container'>
-                <p className='bread-crumbs'>Home / Crédito Consignado</p>
-                <p className='title'>Crédito Consignado</p>
+            <div className='bread-crumbs-container-payroll'>
+                <p className='bread-crumbs-payroll'>Home / Crédito Consignado</p>
+                <p className='title-payroll'>Crédito Consignado</p>
             </div>
             <div className='container'>
                 {payrolls.map(payroll => (

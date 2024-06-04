@@ -42,7 +42,7 @@ const WorkerCard = ({ worker }) => {
                         </div>
                         <div className="worker-card-row">
                             <div className="worker-card-label">Empresa Conveniada</div>
-                            <div className="worker-card-value">{formatedCnpj}</div>
+                            <div className="worker-card-value">{formatedCnpj ?? 'n/a'}</div>
                         </div>
                     </div>
                 </>

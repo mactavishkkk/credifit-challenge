@@ -1,4 +1,4 @@
-.bread-crumbs {
+.bread-crumbs-payroll {
     text-align: center;
     font-size: 14px;
     position: relative;
@@ -7,13 +7,13 @@
     color: #535F5F;
 }
 
-.title {
+.title-payroll {
     text-align: center;
     font-size: 28px;
     color: #057D88;
 }
 
-.bread-crumbs-container {
+.bread-crumbs-container-payroll {
     width: 76%;
 }
 

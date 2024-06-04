@@ -6,7 +6,7 @@
 }
 
 .status-span {
-    width: 70%;
+    width: 80%;
     height: 50%;
     font-weight: bold;
     border-radius: 6px;
@@ -15,6 +15,7 @@
 .status-text {
     position: relative;
     bottom: 33px;
+    font-size: 16px;
 }
 
 .hide-values-button {
@@ -92,7 +93,7 @@
 
 .payroll-card-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 10px 0;
 }
 

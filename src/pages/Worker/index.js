@@ -20,9 +20,9 @@ const Worker = () => {
 
     return (
         <div>
-            <div className='bread-crumbs-container'>
-                <p className='bread-crumbs'>Home / Funcionários</p>
-                <p className='title'>Funcionários</p>
+            <div className='bread-crumbs-container-worker'>
+                <p className='bread-crumbs-worker'>Home / Funcionários</p>
+                <p className='title-worker'>Funcionários</p>
             </div>
             <div className='container'>
                 {workers.map(worker => (
