@@ -20,7 +20,7 @@ const Worker = () => {
 
     return (
         <div>
-            <h2 className='title'>Workers</h2>
+            <h2 className='title'>Funcionários</h2>
             <div className='container'>
                 {workers.map(worker => (
                     <WorkerCard key={worker.id} worker={worker} />

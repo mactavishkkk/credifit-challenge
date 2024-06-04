@@ -20,7 +20,7 @@ const Company = () => {
 
     return (
         <div>
-            <h2 className='title'>Companies</h2>
+            <h2 className='title'>Empresas</h2>
             <div className='container'>
                 {companies.map(company => (
                     <CompanyCard key={company.id} company={company} />

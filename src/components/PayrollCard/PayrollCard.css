@@ -1,0 +1,126 @@
+.payroll-card {
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.status-span {
+    width: 70%;
+    height: 50%;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.status-text {
+    position: relative;
+    bottom: 33px;
+}
+
+.hide-values-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+
+    color: #535F5F;
+    font-size: 16px;
+    text-align: right;
+}
+
+.hide-values-button:hover {
+    color: #313737;
+}
+
+.status-span.approved {
+    background-color: #9AF8AB29;
+    color: #01354E;
+}
+
+.status-span.unapproved {
+    background-color: #FBEA6729;
+    color: #B35200;
+}
+
+.payroll-card-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.payroll-card-title {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.payroll-card-header:hover {
+    background-color: #e7e7e7;
+}
+
+.payroll-card-body {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.payroll-card-divider {
+    height: 1px;
+    background-color: #BBC3C4;
+    margin: 0 10px;
+}
+
+.status-flag-icon {
+    position: relative;
+    top: 15px;
+}
+
+.status-icon {
+    position: relative;
+    top: 15px;
+}
+
+.toggle-icon {
+    font-size: 1.2em;
+}
+
+.payroll-card-row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.payroll-card-label {
+    margin-bottom: 5px;
+}
+
+.payroll-card-value {
+    margin-bottom: 5px;
+    color: #535F5F;
+}
+
+.payroll-card-value {
+    flex: 2;
+}
+
+.payroll-card-value.hidden {
+    filter: blur(5px);
+}
+
+@media (min-width: 600px) {
+    .payroll-card-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .payroll-card-row {
+        flex-direction: column;
+    }
+}
