@@ -13,8 +13,8 @@ const Header = () => {
         <img src={logo} alt="Logo" />
       </div>
       <nav className="nav-links">
-        <Link to="/workers">Funcionários</Link>
-        <Link to="/companies">Empresas</Link>
+        <Link to="/funcionarios">Funcionários</Link>
+        <Link to="/empresas">Empresas</Link>
         <Link to="/">Crédito Consignado</Link>
       </nav>
       <div className="user-info" onClick={() => alert('em breve!')}>

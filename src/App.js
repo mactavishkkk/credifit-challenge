@@ -4,6 +4,7 @@ import Worker from './pages/Worker';
 import PayrollLoan from './pages/PayrollLoan';
 import Company from './pages/Company';
 import Header from './components/Header/Header';
+import LoanApplication from './pages/PayrollLoan/LoanApplication';
 
 const App = () => {
   return (
@@ -12,8 +13,9 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<PayrollLoan />} />
-          <Route path="/workers" element={<Worker />} />
-          <Route path="/companies" element={<Company />} />
+          <Route path="/funcionarios" element={<Worker />} />
+          <Route path="/empresas" element={<Company />} />
+          <Route path="/emprestimo/criar" element={<LoanApplication />} />
         </Routes>
       </div>
     </Router>
