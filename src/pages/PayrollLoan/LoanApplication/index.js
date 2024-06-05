@@ -57,12 +57,12 @@ const LoanApplication = () => {
                 installmentValue: parseFloat(totalFinanced / installments),
                 totalFinanced: parseFloat(totalFinanced)
             }
-            const response = await axios.post('/payrolls', payrollData);
+            await axios.post('/payrolls', payrollData);
 
             alert('Solicitação efetuada com sucesso!');
             navigate('/');
         } catch (error) {
-            setAlertMessage(error.message);
+            setAlertMessage("Este trabalhador não pode financiar uma quantia maior que 35% de seu salário");
             console.error('Error creating loan', error);
         }
     };
@@ -171,12 +171,12 @@ const LoanApplication = () => {
 
                 {currentStep < 4 ? (
                     <button className='next-button' onClick={handleNext}
-                        disabled={installments === 0 || selectedWorker == undefined}                    >
+                        disabled={installments === 0 || selectedWorker === undefined}                    >
                         Próximo
                     </button>
                 ) : null}
 
-                {currentStep == 4 ? (
+                {currentStep === 4 ? (
                     <button className='next-button' onClick={handleConfirm}>Solicitar empréstimo </button>
                 ) : null}
             </div>
