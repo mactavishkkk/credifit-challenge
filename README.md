@@ -2,9 +2,11 @@
 
 Este é um projeto construído com ReactJs 18, Axios, React-Dom 18.3.
 
+- Vídeo de apresentação da solução: [Google Drive](https://drive.google.com/file/d/1PGwp03blYhak_E-mcl25hvAVqZpDflPp/view?usp=sharing)
+
 ## Pré-requisitos
 
-Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina.
+Certifique-se de ter o Docker e o Docker Compose - Docker: [Instalação do Docker](https://docs.docker.com/get-docker/)instalados em sua máquina.
 
 - Docker: [Instalação do Docker](https://docs.docker.com/get-docker/)
 - Docker Compose: [Instalação do Docker Compose](https://docs.docker.com/compose/install/)
