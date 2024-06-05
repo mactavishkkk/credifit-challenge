@@ -31,7 +31,7 @@ const PayrollCard = ({ payroll }) => {
         <div className="payroll-card">
             <div className="payroll-card-header" onClick={toggleCard}>
                 <span className='payroll-card-title'>
-                    <img className="status-icon" src={status == 1 ? ApprovedIcon : UnApprovedIcon} alt="status icon" />
+                    <img className="status-icon" src={status === 1 ? ApprovedIcon : UnApprovedIcon} alt="status icon" />
                     SOLICITAÇÃO DE EMPRÉSTIMO - #{payroll.id}
                 </span>
                 <img className="toggle-icon" src={isOpen ? ArrowUp : ArrowDown} alt="toggle icon" />
@@ -43,7 +43,7 @@ const PayrollCard = ({ payroll }) => {
                         <div className="payroll-card-row">
                             <span className={`status-span ${status === 1 ? 'approved' : 'unapproved'}`}>
                                 <p className="status-text">
-                                    <img className='status-flag-icon' src={status == 1 ? ApprovedIcon : UnApprovedIcon} alt="status icon" />
+                                    <img className='status-flag-icon' src={status === 1 ? ApprovedIcon : UnApprovedIcon} alt="status icon" />
                                     {'Crédito ' + payroll.status.status + ' '}
                                 </p>
                                 {payroll.status.id === 3 ? payroll.statusDetails : null}
